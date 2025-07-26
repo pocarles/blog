@@ -12,80 +12,117 @@
       max-width: 640px;
       padding: 2rem;
       line-height: 1.5;
-      color: #222;
+      color: #000;
       background: #fff;
     }
+    
+    .header-image {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 3rem;
+      display: block;
+    }
+    
     h1 {
       font-size: 2rem;
-      margin-bottom: 0.3rem;
+      margin-bottom: 3rem;
+      color: #000;
     }
-    p.subtitle {
-      color: #666;
-      margin-top: 0;
+    
+    .intro-text {
+      color: #000;
+      margin-bottom: 4rem;
       font-weight: 400;
     }
+    
+    .intro-text p {
+      margin-bottom: 1rem;
+    }
+    
+    .post-list {
+      margin-top: 0;
+    }
+    
+    .post-item {
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+    
+    .post-item h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #000;
+      font-weight: 600;
+    }
+    
+    .post-date {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    
+    .post-content {
+      color: #000;
+      margin-bottom: 1rem;
+    }
+    
+    .post-content p {
+      margin-bottom: 1rem;
+    }
+    
+    .post-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
     a {
       color: #7b61ff;
       text-decoration: none;
       font-weight: 500;
     }
+    
     a:hover {
       text-decoration: underline;
-    }
-    .post-list {
-      margin-top: 2.5rem;
-    }
-    .post-item {
-      margin-bottom: 1.5rem;
-      /* Add some styling for the image within the post-item if it's directly in the list */
-      text-align: center; /* Center image and text within post-item */
-    }
-    .post-item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem auto; /* Center the image and add vertical space */
-        border-radius: 4px; /* Optional: adds soft corners to image */
-    }
-    .post-item h2 { /* Style for the new post title */
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: #333;
-    }
-    .post-item p.post-body { /* Style for the new post body text */
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-        color: #444;
-        text-align: left; /* Keep text left-aligned */
-    }
-    .post-date {
-      font-size: 0.9rem;
-      color: #999;
-      text-align: right; /* Align date to the right */
     }
   </style>
 </head>
 <body>
-
-  <h1>Pierre-Olivier’s Thoughts</h1>
-  <p class="subtitle">For as long as I can remember, I've always written. First for myself, primarily. Yet I've always published what I intended only for my own eyes.
-
-Because the simple knowledge that I would be read forced me toward a minimum of care and rigor.</p>
-
-<p>Today, I no longer have a blog in the traditional sense, so what I publish going forward will find its home here. I hope these thoughts and ideas prove useful to you.</p>
-
-<p>The act of writing compels honesty with your ideas and with yourself.</p>
-
-  <div class="post-list" id="blog-posts-container">
-    <div class="post-item">
-      <a href="posts/2025-07-25-first-post.html">Why simplicity always wins</a>
-      <div class="post-date">July 25, 2025</div>
-    </div>
-    <div class="post-item">
-      <a href="posts/2025-07-20-bias-in-design.html">Designing with bias: how to turn it into a feature</a>
-      <div class="post-date">July 20, 2025</div>
-    </div>
+  <img src="https://raw.githubusercontent.com/pocarles/blog/main/Social%20Image%20PO%20Blog.jpg" alt="Pierre-Olivier's Blog Header" class="header-image" />
+  
+  <h1>Pierre-Olivier's Thoughts</h1>
+  
+  <div class="intro-text">
+    <p>For as long as I can remember, I've always written. First for myself, primarily. Yet I've always published what I intended only for my own eyes. Because the simple knowledge that I would be read forced me toward a minimum of care and rigor.</p>
+    
+    <p>Today, I no longer have a blog in the traditional sense, so what I publish going forward will find its home here. I hope these thoughts and ideas prove useful to you.</p>
+    
+    <p>The act of writing compels honesty with your ideas and with yourself.</p>
   </div>
-
+  
+  <div class="post-list" id="blog-posts-container">
+    <!-- NEW_POSTS_MARKER - This comment will be used by n8n to inject new posts -->
+    
+    <article class="post-item">
+      <h2>Why simplicity always wins</h2>
+      <div class="post-date">July 25, 2025</div>
+      <div class="post-content">
+        <p>Sample content for this post would go here...</p>
+      </div>
+    </article>
+    
+    <article class="post-item">
+      <h2>Designing with bias: how to turn it into a feature</h2>
+      <div class="post-date">July 20, 2025</div>
+      <div class="post-content">
+        <p>Sample content for this post would go here...</p>
+      </div>
+    </article>
+  </div>
 </body>
 </html>
