@@ -33,40 +33,35 @@
       text-decoration: underline;
     }
     .post-list {
-      margin-top: 4rem; /* Increased space above the post list */
+      margin-top: 2.5rem;
     }
     .post-item {
       margin-bottom: 1.5rem;
-      /* REMOVED: text-align: center; to keep text left-aligned */
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 20px;
+      /* Add some styling for the image within the post-item if it's directly in the list */
+      text-align: center; /* Center image and text within post-item */
     }
     .post-item img {
         max-width: 100%;
         height: auto;
-        display: block; /* Ensures margin: auto works */
-        margin: 1rem auto; /* Centers the image horizontally and adds vertical space */
-        border-radius: 4px;
+        display: block;
+        margin: 1rem auto; /* Center the image and add vertical space */
+        border-radius: 4px; /* Optional: adds soft corners to image */
     }
-    .post-item h2 {
+    .post-item h2 { /* Style for the new post title */
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
         color: #333;
-        text-align: left; /* Explicitly keep title left-aligned */
     }
-    .post-item p.post-body {
+    .post-item p.post-body { /* Style for the new post body text */
         font-size: 1rem;
         margin-bottom: 0.5rem;
         color: #444;
-        text-align: left; /* Explicitly keep body text left-aligned */
+        text-align: left; /* Keep text left-aligned */
     }
     .post-date {
       font-size: 0.9rem;
       color: #999;
-      text-align: right; /* Keep date aligned to the right */
+      text-align: right; /* Align date to the right */
     }
   </style>
 </head>
