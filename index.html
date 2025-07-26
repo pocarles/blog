@@ -37,10 +37,31 @@
     }
     .post-item {
       margin-bottom: 1.5rem;
+      /* Add some styling for the image within the post-item if it's directly in the list */
+      text-align: center; /* Center image and text within post-item */
+    }
+    .post-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem auto; /* Center the image and add vertical space */
+        border-radius: 4px; /* Optional: adds soft corners to image */
+    }
+    .post-item h2 { /* Style for the new post title */
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+    .post-item p.post-body { /* Style for the new post body text */
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #444;
+        text-align: left; /* Keep text left-aligned */
     }
     .post-date {
       font-size: 0.9rem;
       color: #999;
+      text-align: right; /* Align date to the right */
     }
   </style>
 </head>
@@ -55,7 +76,7 @@ Because the simple knowledge that I would be read forced me toward a minimum of 
 
 <p>The act of writing compels honesty with your ideas and with yourself.</p>
 
-  <div class="post-list">
+  <div class="post-list" id="blog-posts-container">
     <div class="post-item">
       <a href="posts/2025-07-25-first-post.html">Why simplicity always wins</a>
       <div class="post-date">July 25, 2025</div>
